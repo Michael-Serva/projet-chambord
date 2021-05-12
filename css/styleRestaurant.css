@@ -1,0 +1,138 @@
+:root{
+    --or: #d3c37b;
+    --taupeClair: #aba598;
+    --taupe: #89725B;
+    --marronGlace: #4c3e2c;
+    --chocolat: #0f0d0a;
+    --police : #ce9c4c;
+    --box-shadow-light :0px 2px 5px 0px rgba(150,150,150,.8); 
+    --box-shadow-hight :0px 10px 20px 0px rgba(150,150,150,.8); 
+}
+
+@media (max-width: 576px) {
+    div.vin{
+      font-size: small;
+    }
+}
+@media (max-width: 576px) {
+    #blocTxt{
+        padding: 20px;
+        left: 0%;
+        width: 98%;
+        font-size: small;
+        max-height: 160px;
+        overflow: auto;
+    }
+}
+@media (max-width: 1050px) {
+    #blocTxt{
+        padding: 10px;
+        left: 0%;
+        width: 98%;
+        font-size: small;
+        max-height: 160px;
+        overflow: auto;
+    }
+}
+
+#blocTxt{
+    padding: 30px 25px 0 5px;
+}
+img.mainImgRestau{
+    width: 100%;
+}
+
+
+h2{
+    
+    color: var(--police);
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pinyon Script', cursive;
+    z-index: 999;
+}
+@media (max-width: 576px) {
+    h2{
+        font-size: large;
+        font-weight: 900;
+    }
+}
+
+
+
+
+
+
+/*Slider*/
+
+.slider{
+    overflow: hidden;
+    box-shadow: #4c3e2c 0.3px 0.3px;
+}
+div.slides{
+    display: flex;
+    animation: glisse 10s infinite ease;
+    width: calc(200px*4);
+    align-items: center;
+    opacity: 0.5;
+    
+}
+
+@keyframes glisse{
+    
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(-1000px);
+    }
+    75%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+/*Section Plats signatures*/
+.plat{
+    
+    opacity: 1;
+}
+.menu div{
+    
+    
+}
+.hidden{
+    display: none;
+}
+.detailPlat1 span{
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+   left: 0;
+   width: 100%;
+   bottom: 20%;
+   display: none;
+    
+    
+}
+
+
+
+strong{
+    color: var(--or);
+    font-style: italic;
+}
+img.cave-vins{
+    float: left;
+}
+
+/*footer*/
+

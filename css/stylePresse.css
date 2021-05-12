@@ -1,0 +1,144 @@
+:root{
+
+    --box-shadow-dark :0px 5px 10px 0px rgba(50,50,50,.8);
+    --box-shadow-light :0px 5px 10px 0px rgba(150,150,150,.8);
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+main{
+    padding: 3rem 4rem;
+    transition: all .2s;
+}
+
+main div h2{
+    font-size: 3rem;
+}
+.displayPresse{
+    display: flex;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+ 
+.card{
+    /* min-width: 33%; */
+    max-width: 30rem;
+    background-color: #fff;
+    color: var(--gray);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-dark);
+    margin: 2rem 1rem;
+    transition: all 1s;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-light);
+}
+.card-content{
+    text-align: center;
+}
+.card-img{
+    width: 100%;
+    max-height: 40rem;
+    overflow: hidden;
+}
+.card-img img{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+
+}
+.card-content h3{
+    font-size: 0.9em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.card-content h4{
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: .8rem;
+    color: var(--marronGlace);
+}
+
+.detailsPresse{
+    background-color: rgba(120,120,120,.8);
+    height: 100%;
+    padding: 2rem 3rem 6rem 3rem;
+    transition: all .5s;
+
+}
+
+.detailsImg img{
+    box-shadow: var(--box-shadow-light);
+    width: 15em;
+}
+.detailsContent{
+    width: 70%;
+    padding: 0 5rem;
+}
+.detailsContent h3{
+    font-size: 2em;
+    margin-bottom: 1.2rem;
+}
+.detailsContent h4{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 100;
+}
+.detailsContent h4 span{
+    font-weight: 500;
+}
+
+.detailsContent h5{
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.detailsContent p{
+    font-weight: 100;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.back button{
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+.back i{
+    font-size: 4rem;
+    color: #fff;
+    transition: all .2s;
+}
+.back i:hover{
+    color: var(--gray-light);
+    cursor: pointer;
+    transform: scale(.9);
+}
+.cardDetails{
+    display: flex;
+    margin-top: 3rem;
+}
+
+@media (max-width : 450px){
+    header p{
+        display: none;
+    }
+}
+@media (max-width : 800px){
+    .cardDetails{
+        flex-direction: column;
+    }
+    .container, .detailsImg, .detailsContent{
+        width: 100%;
+    }
+    .detailsContent{
+        margin-top: 3rem;
+        padding: 0;
+    }
+}

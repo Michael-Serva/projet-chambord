@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="fr-FR">
+
+<head>
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Open+Sans:wght@300&family=Pinyon+Script&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bienvenue à l'hotel Chambord, sur cette page vous trouverez les conditions générales de vente">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <title>Hotel Chambord - Conditions générales de vente</title>
+</head>
+
+<body>
+  
+  <header class="fixed-top row"><!--debut du header-->
+    <!--Logo + titre-->
+    
+    <div id="logo" class="container row align-items-center">
+      <!--Dropdown choix de la  langue-->
+      <div class="dropdown col-lg-1 col-md col-sm-2">
+        <button class="btn dropdown-toggle" type="button" 
+        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="drapeau"><img src="img/logo-fr-2.png" width="20" alt="image du drapeau français"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item drapeauFR" href="#"><img src="img/logo-fr-2.png" width="20" alt="image du drapeau français">  Français</a></li>
+          <li><a class="dropdown-item drapeauEN" href="#"><img src="img/logo-en.jpg" width="20" alt="image du drapeau anglais">  English</a></li>
+        </ul>
+      </div>
+
+        <!--logo de la page-->  
+      <div class="col-lg-1 col-md offset-lg-4 offset-md-2 col-sm col-2" ><a href="index.html"><img src="img/logo.png" width="70" alt="Ceci est le logo" id="tailleLogo"></a></div>
+
+      <!--titre de la page-->
+      <div class="col-lg-1 col-md col-sm col" id="positionTitre"><a href="index.html"><h1 class="text-center">Hotel Chambord *****</h1></a></div>
+
+      <!--panier-->
+       <div class="col-lg-1 offset-lg-3 offset-md-1 col-md col-sm-2 col-1 " id="positionPanier"><a href="panier.html"><img src="img/logo-panier1.jpg" alt="Ceci est votre panier d'achat" width="30" ></a></div>
+
+       <!--bouton de recherche-->
+       <div class="dropdown col-lg-1 col-md col-sm-1 col-1" id="positionLoupe">
+        <button class="btn dropdown-toggle" type="button" 
+        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/logo-loupe.jpg" width="20" alt="image du drapeau français">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          
+            <div class="input-groupb row">
+            <div class="form-outline col-10">
+              <input id="search-input" type="search" class="form-control" />
+            </div>
+            <button id="search-button" type="button" class="btn col-1 col-md-1 bouton-de-recherche"><img src="img/logo-loupe.jpg" width="15" alt="">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        
+        </div>
+      </div>
+      
+    </div>
+    
+    <!--navbar alternative-->
+    <section class=".blocNav">
+    <nav class="navbar navbar-expand-lg navbar-light  hidden responsiveNavbar notreBg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="hotel.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hotel
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="hotel.html">Présentation</a></li>
+                <li><a class="dropdown-item" href="hotel.html#galerie">Galerie</a></li>
+                <li><a class="dropdown-item" href="contact.html">Plan d'accès</a></li>
+                <li><a class="dropdown-item" href="contact.html#contact">Contact</a></li>
+                <li><a class="dropdown-item" href="recrutement.html">Rejoindre notre équipe</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="chambre.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chambres
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="chambre.html#classique">Classique</a></li>
+                <li><a class="dropdown-item" href="chambre.html#confort">Confort</a></li>
+                <li><a class="dropdown-item" href="chambre.html#deluxe">Deluxe</a></li>
+                <li><a class="dropdown-item" href="chambre.html#suite">Suite</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="restaurant.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurant
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="restaurant.html#carte">Notre carte</a></li>
+                <li><a class="dropdown-item" href="restaurant.html#signature">Nos plats signatures</a></li>
+                <li><a class="dropdown-item" href="restaurant.html#carteVins">Notre carte des vins</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="spa.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Spa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="spa.html#decouverte">Soin découverte</a></li>
+                <li><a class="dropdown-item" href="spa.html#detente">Soin détente</a></li>
+                <li><a class="dropdown-item" href="spa.html#relaxant">Soin relaxant</a></li>
+                <li><a class="dropdown-item" href="spa.html#plaisir">Soin plaisir</a></li>
+                <li><a class="dropdown-item" href="spa.html#evasion">Soin Evasion</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="actualites.html">Actualités</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="presse.html">Presse</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+        <!--navabar principale-->
+        <nav class="navbar navbar-expand-lg navbar-light initialNavbar notreBg">
+          <div class="container-fluid ">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+              
+            </button>
+            <div class="collapse navbar-collapse initialNavbar" id="navbarTogglerDemo01">
+
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link hotel active" aria-current="page" href="hotel.html">Hotel</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link chambre" aria-current="page" href="chambre.html">Chambres</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link restaurant" aria-current="page" href="restaurant.html">Restaurant</a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link spa" aria-current="page" href="spa.html">Spa</a>
+                </li>
+                 <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="actualites.html">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="presse.html">Presse</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav><!--fin de navbar-->
+        <ul class="sousMenu row">
+          
+          <li class="col lien1"></li>
+          <li class="col lien2"></li>
+          <li class="col lien3"></li>
+          <li class="col lien4"></li>
+          <li class="col lien5"></li>
+
+
+        </ul>
+      </section>
+ 
+        <div class="position-relative sideBar">
+          <nav class="side-nav position-absolute top-0 end-0">
+              <div class="fondLogo"><a href="index.html"><img src="img/logo.png" width="50" alt="ceci est le logo de l'hôtel"></a></div>
+              <div class="fondReserver text-center" >R<br>é<br>s<br>e<br>r<br>v<br>e<br>r</div><!--creer une image sur photoshop avec le mot reserver-->
+              <div class="fondChambre fondLogo"><a href="reservations.html#resa_chambre"><img src="img/logo-chambre.svg"  alt="logo de la chambre"></a><span class="effetSideBar">CHAMBRES & SUITES</span></div>
+              <div class="fondRestau fondLogo"><a href="reservations.html#resa_restaurant"><img src="img/logo-restaurant.svg" alt="logo du restaurant"></a><span class="effetSideBar">RESTAURANT</span></div>
+              <div class="fondSpa fondLogo"><a href="reservations.html#resa_spa"><img src="img/logo-spa.png" alt="logo de l'espace spa" class="" width="30"></a><span class="effetSideBar">SPA & SOINS</span></div>
+
+          </nav>
+      </div>
+  </header> <!--Fin du header-->
+
+
+  <main>
+
+    <div class="container">
+      <h1 class="text-left "></h1>
+      <div class="container textPave" >
+        <h2 class="text-center">Conditions générales de vente</h2>
+        <h3>I – GENERAL </h3>
+        Les présentes conditions générales de vente (ci-après : « CGV ») s’appliquent aux opérations de ventes conclues par l’Hôtel (ci-après : « la Société ») avec le Client. <br>
+        <br>Elles annulent et remplacent toute version précédente ayant pu être mise en ligne et/ou acceptée par le Client.
+        <br>Les présentes CGV s’appliquent à toute utilisation du site, notamment à la commercialisation par internet, par téléphone et en direct de toutes les prestations proposées sur place et sur le Site de l’Hôtel Chambord***** géré par la Société HOTEL CHAMBORD*****.
+        <br>Il est donc impératif que le Client lise attentivement les CGV qui sont référencées sur la page du site. Il lui est notamment conseillé de les télécharger et/ou de les imprimer afin d’en conserver une copie au jour de sa commande dès lors que celles-ci sont susceptibles d’être modifiées, étant toutefois précisé que de telles modifications seront inapplicables aux commandes de Prestations effectuées antérieurement.
+        <br>Les CGV peuvent être complétées par des conditions de vente particulières figurant sur le descriptif de la prestation ainsi que par les conditions de vente des prestataires, accessibles soit sur leur Site internet, soit sur place.
+        <br>
+        <br>Nom de l’enseigne : HOTEL CHAMBORD*****
+        <br>Société : HOTEL CHAMBORD*****
+        <br>Adresse : 1 avenue Montaigne 75008 PARIS
+        <br>SIRET : RCS Paris 344 175 369 000 18
+        <br>N° de TVA Intracommunautaire : FR 16 344 175 369 00018
+        <br>Tél. : 01 43 22 10 13
+        <br>ADRESSE MAIL : reservation@hotelchambord.com
+        <br>
+        <br>Les conditions générales de vente s’appliquent à toutes les réservations et transactions établies avec la société Hotel Chambord*****.
+
+        <h3>II – CONDITIONS DE RÉSERVATION ET D’ANNULATION</h3>
+        Garantie de réservation
+        <br>Les réservations doivent être garanties au moment de la réservation par l’un des moyens suivants :
+        <br>- Carte de crédit / Carte de Débit / Virement /Ou Espèces
+        <br>Selon les conditions spécifiques des tarifs réservés, un dépôt pouvant aller jusqu’à 100% du montant de la réservation pourra être débité au moment de la réservation. (Voir les conditions de réservation spécifiques du tarif réservé).
+        Le fait de donner un numéro de carte bancaire engage le client envers l'hôtelier et implique son acceptation des conditions de vente.
+        Conformément à la loi informatique et liberté du 6 janvier 1978, les informations vous concernant resteront accessibles et modifiables.
+        L'Hôtel Chambord***** procèdera à une pré-autorisation de la carte de crédit avant la date d'arrivée.
+        <br> 
+        <br>Conditions d’annulation
+        <br>Si vous devez annuler, merci de prévenir dans les temps, en respectant les délais d'annulation.
+        <br>Les conditions d’annulations dépendent du tarif réservé, voir les conditions spécifiques de la réservation.
+        <br>Pour les réservations de plus de 3 chambres des conditions spécifiques de dépôts et d’annulations seront appliquées.
+        Les délais sont décomptés à partir de la date d'arrivée du client.
+        <br><br>Réservation de moins de 3 chambres:
+        <br>Dans le cadre d'un tarif flexible, vous pouvez annuler votre réservation, de moins de 3 chambres, sans frais jusqu'à 24h avant votre jour d'arrivée. Passé ce délai le montant de la première nuit vous sera débitée, les arrhes seront acquises à l'Hôtel et la facture vous sera envoyée.
+        Pour tous les autres cas de réservation non flexible, les conditions d'annulation seront celles envoyées lors de la confirmation.
+        <br>Si vous avez bénéficié d'une offre spéciale, votre réservation est non annulable et non remboursable. Vous pouvez toutefois nous contacter pour voir si nous pouvons modifier les dates jusqu'à 72h avant l'arrivée prévue. Un supplément tarifaire pourra vous être appliqué en fonction des dates souhaitées.
+        <br>Les délais sont décomptés à partir du jour d’arrivée du client.
+        <br><br>Réservation de plus de 3 chambres:
+        <br>Pour toute réservation de groupe, à partir de 3 chambres réservées, basée sur une offre flexible, le délai d'annulation sans frais est de:
+        <br>- 72h pour moins de 3 chambres,
+        <br>- une semaine entre 3 et 5 chambres,
+        <br>- deux semaines entre 5 et 10  chambres annulées,
+        <br>- un mois entre 10 et 15 chambres.
+        <br>- deux mois pour plus de 15 chambres annulées, les arrhes ne seront en revanche non remboursés.
+        <br>Pour tout groupe de plus de 10 chambres, 30% d'arrhes du séjour seront demandés à la réservation et ne seront pas remboursés, 50% du montant de la réservation un mois avant et les 20% restant au plus tard le jour de l'arrivée sera exigé.
+        <br> 
+        <br>Disponibilité des chambres
+        <br>L’attribution de chambres spécifiques ne peut être garantie. Les chambres réservées sont disponibles pour le client à partir de 15:00 le jour de l’arrivée. Les chambres doivent être libérées à 12:00 au plus tard le jour du départ.
+        <br>Nous vous remercions de bien vouloir prévenir l'hôtel en cas d'arrivée avant 15h ou après 18 h. Au-delà de cet horaire, 18h, sans nouvelle de votre part, l'hôtel se réserve le droit de libérer votre chambre si votre réservation n’est pas garantie.
+        <br>Des frais supplémentaires pouvant aller jusqu’à 100% du prix de la chambre réservée pourront être appliqués en cas de départ tardif, sauf en cas d’arrangement préalable avec la réception. Si vous souhaitez garder votre chambre plus tard, sachez que des tarifs « Day Use » et « Check out Tardif » peuvent vous être proposés en fonction de la disponibilité.
+        <br>Seules les personnes majeures peuvent louer une chambre, toute personne mineure doit être sous la surveillance d’un adulte responsable, présent pendant tout le séjour. Aucun mineur ne peut rester ou se déplacer seul au sein de l’hôtel.
+        <br>L’Hôtel est un espace entièrement non-fumeur, même les fenêtres ouvertes. Un espace dans la cour intérieure a été aménagé à cet effet.  Le client sera tenu responsable des dommages directs et/ou indirects, consécutifs, résultant de l’acte de fumer et de vapoter dans l’Hôtel. Il sera par conséquent, redevable de l’intégralité du montant des frais de nettoyage et de remise en l’état initial de l’élément ou l’espace endommagé.
+        <br>L’interdiction générale de fumer au sein des Hôtels et restaurants est applicable, en France, depuis le 2/01/2008 dans tous les lieux publics, à savoir tout l’Hôtel quand celui-ci mentionne spécifiquement qu’il est intégralement non-fumeur.
+        <br>Tout contrevenant s’expose à une pénalité de 500 € qui sera directement prélevée sur la carte de crédit donnée en garantie (perte de chiffre d’affaires dûe à l’impossibilté pour l’hôtelier de relouer la chambre sur plusieurs nuits suivant le départ du client fumeur / nettoyage obligatoire de tous les tissus/ shampooinage de la moquette/lessivage des murs, des rideaux).
+        <br>Pour des raisons de sécurité et pour le respect de chacun, il est formellement interdit de fumer dans tout l’hôtel. Conformément au décret n°2006-1386 du 15 novembre 2006 fixant les conditions d’application de l’interdiction de fumer dans les lieux affectés à un usage collectif, fumer dans l’hôtel vous expose à une facturation supplémentaire ou à des poursuites judiciaires.
+        <br>Tout déclenchement intempestif de l’alarme incendie pour non-respect de cette disposition sera facturé 150€ pour frais de remise en service du système de sécurité incendie.
+        <br>Le Client est responsable de l’ensemble des dommages causés par son intermédiaire (lui-même ou l’une des personnes pour lesquelles il a réservé un séjour dans l’Hôtel), et s’engage, en cas de dégradation des lieux mis à sa disposition, à supporter le coût de remise en état desdits lieux.
+        <br>Le tapage, même diurne, est interdit. Le client causant du désordre ou du scandale sous quelque forme que ce soit, sera invité à quitter l’hôtel immédiatement et sans remboursement de son séjour. Dans l’intérêt de la tranquillité de l’établissement, tout bruit doit cesser entre 22 heures et 7 heures.
+        <br>Merci de respecter le repos des autres clients, en fermant vos portes sans les claquer, en téléphonant dans votre chambre et non dans le couloir et en faisant preuve de bienveillance en évitant de faire du bruit, particulièrement entre 22h00 et 8h00. Tout bruit de voisinage lié au comportement d’une personne sous sa responsabilité, pourra amener l’hôtelier à inviter le client à quitter l’établissement sans qu’il ne soit besoin de procéder à des mesures acoustiques, dès lors que le bruit engendré est de nature à porter atteinte à la tranquillité de la clientèle (art. R.1334-30 et R; 1334-31 du code de la Santé publique). Le tapage nécessitant le remboursement des clients en ayant subi les désagréments sera débité sur la carte de crédit des tapageurs.
+        <br>Une chambre d’hôtel est un lieu de repos. Tout commerce y est formellement interdit.
+        <br>Pour les mêmes raisons, les visites pourront avoir lieu dans le salon ou le bar mais pas dans les chambres.  <br>Nous vous remercions de ne pas dépasser le nombre de personnes autorisés dans votre chambre pour des raisons de sécurité.
+        <br>
+        <br>Tarifs
+        <br>Les tarifs sont indiqués en Euros et incluent la TVA, sauf en cas de mention spécifique au moment de la réservation.
+        <br>Les tarifs s’entendent par chambre pour le nombre de personnes indiqué et selon la période sélectionnée.
+        <br>Les prix mentionnés sur le Site et à la Réception sont susceptibles de modification à tout moment par l’Hôtel sans information préalable ni préavis. Seul le prix indiqué dans la confirmation de réservation par la Société est contractuel.
+        <br>Les changements tarifaires ne seront pas appliqués aux réservations déjà enregistrées, excepté en cas de changement des taxes légales.
+        <br>Les prix indiqués ne comprennent que les prestations strictement mentionnées dans la réservation. Au prix mentionné dans la réservation seront ajoutées les prestations complémentaires fournies par l’hôtelier lors du séjour et, le cas échéant, la taxe de séjour.
+        <br>En fonction de l’offre choisie, le petit-déjeuner sera en supplément si vous n’avez pas pris le package « Petit-déjeuner inclus » ou « Soirée Etape ».
+        <br>La Taxe de séjour par jour et par personne est dûe pour tout client de plus de 18 ans suivant les recommandations ci-dessous, montant, exonération...
+        <br>https://www.parisinfo.com/paris-pratique/argent/taxe-de-s%C3%A9jour
+        <br>Les animaux de compagnie sont admis (avec un supplément).
+        <br>Aucun séjour réservé avant la mise en place d’une éventuelle offre promotionnelle ne fera l’objet de remboursement, même partiel.
+         
+
+        
+        <h3>III – MOYENS DE PAIEMENT</h3>
+        Garantie
+        <br>Toutes les réservations nécessitent une garantie ou un dépôt. Les réservations garanties sont maintenues jusqu’à 12.00 le lendemain du jour prévu de l’arrivée. L’Hôtel demandera au Client, lors de son arrivée, de régler un dépôt de garantie ou d’autoriser le débit de sa carte bancaire, en vue de garantir le paiement des sommes correspondant aux prestations consommées sur place.
+        <br>Le Client communiquera alors ses coordonnées bancaires en précisant le nom de la carte bancaire, le numéro de la carte bancaire, la date de validité (la carte bancaire doit être valable jusqu’à la date de fin du séjour) et le cryptogramme.
+        <br>Il sera demandé au Client de présenter une pièce d’identité dans le cadre des procédures de prévention contre la fraude aux cartes bancaires, ainsi que la carte utilisée pour la reservation.
+        <br>
+        <br>a – Carte de crédit
+        <br>Une carte de crédit valide avec le nom du client doit être présentée au moment de l’arrivée, ainsi qu’une pièce d’identité. Une pré-autorisation du montant total de la réservation sera prise à l’arrivée. L’hôtel se réserve le droit de prendre les pré-autorisations supplémentaires nécessaires.
+        <br>
+        <br>b – Carte de débit
+        <br>Une carte de débit valide avec le nom du client doit être présentée au moment de l’arrivée, ainsi qu’une pièce d’identité. Le paiement du montant total de la réservation sera effectué à l’arrivée. Le paiement de toutes les dépenses additionnelles doit être effectué avant le départ.
+        <br>
+        <br>c – Cash
+        <br>Le paiement du montant total de la réservation sera effectué au moment de l’arrivée. Le paiement de toutes les dépenses additionnelles doit être effectué avant le départ.
+        <br>
+        <br>d – Transfert bancaire
+        <br>Le virement doit être reçu sur le compte bancaire 24 heures avant l’arrivée. Une carte de crédit ou de débit sera demandée à l’arrivée pour couvrir les dépenses additionnelles, ainsi qu’une carte d’identité. Une pré-autorisation sera effectuée.
+        <br>
+        <br>Paiements acceptés : Espèces, chèques, chèques Vacances, American Express, Visa, Euro/Mastercard, Carte Bleue, Virement, JCB.
+        <br>Pour les sociétés, nous mettons en place des conventions avec possibilité de paiement différé par chèque ou virement bancaire.
+        <br>Défaut de règlement : À défaut de paiement à l’échéance contractuelle, des pénalités de retard seront dues dès le lendemain de la date d’échéance de la facture au taux de 15% l’an, appliquées au montant total TTC de la facture. Par ailleurs, une indemnité forfaitaire s’élevant à 40€ HT par créance sera exigible dès le lendemain de la date d’échéance de la facture à laquelle s’ajoutera une indemnité complémentaire permettant de couvrir la totalité des frais engagés en cas de recouvrement contentieux. Il est ici rappelé que tout règlement intervenant au-delà de 60 jours à compter de la date d’émission de la facture est légalement considéré comme pratique abusive et pénalement réprimée. En outre, tout défaut de paiement à l’échéance contractuelle rendra exigible immédiatement la totalité des créances restant dues par le Client au titre de factures émises par l’Hôtel, et entraînera la modification des modalités de règlement, à savoir le Client devra prépayer toute nouvelle demande de réservation et ce jusqu’au paiement total des créances dues à l’Hôtel.
+         
+        
+        
+        <h3>IV - EXTRAS</h3>
+        Tous les extras (téléphone, bar, petit-déjeuner...) doivent être réglés sur place avant le départ. L'Hôtel Chambord***** se réserve le droit d'effectuer une pré-autorisation de la carte de crédit afin de couvrir ces frais. À défaut de règlement de ces prestations, ces sommes seront directement débitées.
+        <br>Le wifi est gratuit et illimité dans l'établissement.
+        
+       
+        <h3>V - ASSURANCES</h3>
+        L’hôtel sera dégagé de toutes obligations au cas où un événement de force majeure, ou de cas fortuit, surviendrait (grève, incendie, dégât des eaux).
+
+        <h3>VII - RECLAMATIONS</h3>
+        Toute contestation ou réclamation doit être adressée à l'hôtel par lettre recommandée avec accusé de réception dans un délai maximum de 8 jours après le départ des clients.
+        <br>Passé ce délai, aucune réclamation ne pourra être satisfaite.
+        <br>Tout bagage laissé dans notre établissement sans information de retour et demande au préalable auprès de notre réception ne sera conservé que 24 heures et facturé.
+        <br>Après avoir saisi le service client au 01 43 22 10 13 ou reservation@hotel-montparnasse.fr et à défaut de réponse satisfaisante dans un délai de 1 mois, le client peut saisir le Médiateur du Tourisme et du Voyage, dont les coordonnées et modalités de saisine sont disponibles sur son site : www.mtv.travel.fr
+
+        <h3>VIII – FORCE MAJEURE</h3>
+        Les Parties ne pourront être tenues pour responsables si la non-exécution ou le retard dans l’exécution de l’une quelconque de leurs obligations, telles que décrites dans les présentes découle d’un cas de force majeure, au sens de l’article 1218 du Code civil.
+ 
+        <h3>IX - LIMITATIONS DE RESPONSABILITÉ</h3>
+        La responsabilité totale de « L’Hotel de Paris Montparnasse » pour toute perte ne doit pas dépasser le montant que vous avez payé à l'hôtel dans le cadre de votre réservation au moment où la perte survient. Nous ne serons pas responsables de (1) toute perte non causée par une rupture de contrat, un manquement à une obligation légale ou une négligence, (2) une perte indirecte ou consécutive, ou (3) une perte causée par vous ou un membre de votre groupe.
+        <br>
+        <br>Rien dans ces termes ne doit limiter ou exclure la responsabilité de l'hôtel en cas de fraude ou de décès ou de blessure ou de toute autre question que nous ne pouvons ni limiter ni exclure par la loi. L'hôtel se réserve le droit d'annuler tout événement s'il estime raisonnablement qu'il pourrait nuire à sa réputation et, dans ce cas, aucun remboursement ne sera accordé.
+        <br>
+        <br>Vous êtes responsable de votre conduite et de celle de vos invités et ne devez à aucun moment causer une violation des politiques de l'hôtel ou de toute loi applicable ou causer des nuisances aux autres clients de l'hôtel.
+        <br>Vous devez rembourser intégralement à l'hôtel toute perte ou tout dommage causé à l'hôtel ou toute interruption de nos activités par vos actes et omissions ou ceux des membres de votre groupe, que ce soit par négligence ou nous nous réservons le droit de facturer votre carte de crédit ou de débit pour de tels montants.
+        
+        <h3>X - DIVERS</h3>
+        Ces termes et conditions peuvent être mis à jour ou modifiés régulièrement et seront pleinement applicables après leur publication sur le site. Si ces conditions sont modifiées après avoir effectué une réservation et affectent votre relation avec l'hôtel en termes de taxes ou d'autres modifications découlant des lois locales, vous en serez informés par un contact électronique à l’adresse que vous avez fourni lors du processus d'inscription.
+
+        <h3>XI – LOI ET JURIDICTION</h3>
+        Ce contrat sera régi et interprété par la loi de Paris, France et vous et nous acceptons de nous soumettre à la juridiction des tribunaux de Paris, France.
+        
+        <h3>XII - UTILISATION DU SITE INTERNET</h3>
+        L’accès au site internet est limité aux personnes de plus de 18 ans. Le Client reconnaît avoir la capacité de contracter, c’est-à-dire avoir la majorité légale et ne pas être sous curatelle ou sous tutelle.
+        <br>Toutes les informations communiquées à travers l’utilisation de ce site internet, pour l’enregistrement d’une réservation ou autres, doivent être exactes et véridiques.
+        <br>En faisant votre réservation sur notre système de réservation, vous êtes protégés par un protocole de sécurisation SSL (Secure Socket Layer), utilisé par les navigateurs web les plus courants incluant Internet Explorer et Google Chrome. A travers le cryptage, les informations que vous communiqués, comme votre nom, adresse et informations sur votre carte de crédit sont converties en code qui est ensuite envoyé de façon sécurisée sur Internet. <br>
+        <br>Responsabilité
+        <br>L’hôtel ne donne aucune garantie sur le site et son contenu. Vous êtes donc seul responsable de son utilisation.
+        <br> <br>Droit de rétractation
+        <br>En application des dispositions de l’article L 121-21-8 du Code de la Consommation, les prestations proposées sur le Site par la Société ne sont pas soumises à l’application du droit de rétractation prévu aux articles L. 121-21 et suivants du code de la consommation en matière de vente à distance.
+        <br>En conséquence, les prestations commandées sur le Site sont exclusivement soumises aux conditions d’annulation et de modification prévues aux présentes CGV et le Client ne pourra pas invoquer le droit à rétractation.
+        <br>
+        <br>Fonctionnement du site
+        <br>L'hôtel ne peut être tenus responsables des pertes ou dommages directs, indirects ou consécutifs (y compris, sans limitation, la perte de revenus, la perte de clientèle, la perte de réputation et la perte ou l'endommagement des données). Leur utilisation, ou toute erreur, inexactitude, omission dans les services ou contenus fournis quelle qu'en soit la cause.
+        <br>
+        <br>Droits de propriété intellectuelle
+        <br>L’Hotel de Paris Montparnasse est l'unique propriétaire, licencié et utilisateur autorisé de tout contenu et matériel publié sur ce site. Toutes les œuvres (site et son contenu) sont protégées par le droit d'auteur et ce dans le monde entier. Tous droits réservés.
+        <br>Vous pouvez utiliser ce site et son contenu uniquement à des fins personnelles, non commerciales et privées, sous réserve des lois sur les droits d'auteur applicables. Vous ne devez utiliser aucune partie du site sans obtenir une licence pour le faire auprès de l'hôtel ou, selon le cas, de tout autre concédant de licence autorisé.
+        <br>
+        <br>Vous ne devez pas copier, afficher, modifier, télécharger, reproduire ou transférer à un tiers une partie quelconque du contenu ou du contenu de ce site sans en avoir obtenu l'autorisation.
+        <br>
+        <br>Aucun élément contenu sur ce site ne doit être interprété comme accordant à vous ou à quiconque une licence ou un droit d'utilisation des marques commerciales ou autres droits de propriété intellectuelle de « L’Hotel de Paris Montparnasse » et vous ne pouvez également pas utiliser de balises méta ou autre texte caché utilisant l'IP.
+        
+        <h3>XIII – INFORMATIONS TECHNIQUES </h3>
+        Il est rappelé que le secret des correspondances n'est pas garanti sur le réseau Internet et qu'il appartient à chaque utilisateur d'Internet de prendre toutes les mesures appropriées de façon à protéger ses propres données et/ou logiciels de la contamination d'éventuels virus circulant sur Internet.
+
+        <h3>XIV - DELOGEMENT</h3>
+        En cas de non disponibilité de l’Hôtel ou en cas de force majeure, ce dernier se réserve la possibilité de faire héberger totalement ou partiellement le Client dans un hôtel de catégorie équivalente ou supérieure, proposant des prestations de même nature. Le transfert sera alors à la charge de l’hôtelier qui ne pourra être recherché en paiement d’une quelconque indemnité supplémentaire.
+
+
+
+      </div>
+
+      
+
+
+    </div>
+  </main>
+
+  <footer >
+    <section class="footer1 row ">
+      <div class="piedHotel col-sm-2">
+        <img src="img/logo.png" width="70" alt="logo" >
+        <br>Hotel&nbsp;Chambord&nbsp;*****
+        <br>1 avenue Montaigne
+        <br>75008 Paris
+  
+      </div>
+      <nav class="navFoot navbar-light col-sm-2 ">
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="contact.html">Accès</a></li>
+          <li><a class="nav-link" href="contact.html#contact">Contact</a></li>
+          <li><a class="nav-link" href="recrutement.html">Recrutement</a></li>
+          <li><a class="nav-link" href="presse.html">Presse</a></li>
+          <li><a class="nav-link" href="hotel.html#galerie">Galerie</a></li>
+        </ul>
+      </nav>
+      <div class="reseau col-lg-3">
+        <p>
+        <a href="http://www.facebook.com"><img src="img/logo-facebook.png"  alt="logo facebook" ></a>
+        <a href="http://www.twitter.com"><img src="img/logo-twitter.png"  alt="logo twitter" ></a>
+      </p>
+        
+        <form method="post">        
+          <div class="form-group">
+            <label class="inputEmailLabel">Abonnement à notre newsletter :</label>
+          </div>
+          <div class="form-group">
+            <input type="email" class="emailNews" id="inputEmail" placeholder="Entrer votre email">
+          </div>
+          <input class="btn buttonBg" id="inputEmailValid" value="S'inscrire">
+        </form>
+        <p class="petit">
+          En cliquant sur "s'inscrire", vous acceptez de recevoir des informations sur les nouvelles, les événements, les promotions et les services de l'hotel Chambord*****
+        </p>
+      </div>
+     <div class="avis col-lg-3 row">
+      <div class="col-sm-8">
+        <h3>Un havre de paix dans le luxe d'un palace</h3>
+      </div>
+      <div class="col-sm-4">
+          <div class="etoiles">
+              <div class="etoileOrPied"><!--
+              -->☆<!--
+              -->☆<!--
+              -->☆<!--
+              -->☆<!--
+              -->☆
+              </div>
+          </div>
+      </div>
+      <div >
+        <p class="Sejour">
+          L’accueil l’emplacement l’histoire de cet hôtel le professionnalisme la disponibilité l’écoute du personnel en un mot parfait !
+          <br>Date du séjour : avril 2021
+        </p>
+      </div>
+  
+      <div class="col-sm-8">
+        <h3>Extraordinaire malgré le confinement</h3>
+      </div>
+      <div class="col-sm-4">
+          <div class="etoiles">
+              <div class="etoileOrPied"><!--
+              -->☆<!--
+              -->☆<!--
+              -->☆<!--
+              -->☆<!--
+              -->☆
+              </div>
+          </div>
+      </div>
+      <div >
+        <p class="Sejour">
+          Lieu magique, et tout le personnel a été très attentif à nous faire passer un moment extraordinaire malgré les nombreuses contraintes sanitaires. Merci !
+          <br>Date du séjour : mars 2021
+        </p>
+      </div> 
+      <div class="text-end col-lg-10 depotAvis">
+        <span class="infobulleAvis" aria-label="Donnez nous votre avis">
+        <a href="avis.html" ><img src="img/avis.png" width="40" alt="laisser votre avis" >
+        </a></span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="footer2 text-center">
+    <p>© Hotel Chambord **** |<a href="plansite.html"> Plan du site </a>|<a href="mentionslegales.html"> Mentions légales </a>|<a href="cgv.html"> Conditions générales de vente </a>| <span class="infobulleImprimer" id="button-imprimer" aria-label="Imprimer"><img src="img/logo-print.png" width="30" alt="logo imprimer" ></span>
+  
+      <br></p>
+      <p class="notreBg">
+      Ce site, tout en étant totalement fonctionnel, est fictif : il s'agit d'un projet d'études pour l'IFOCOP.
+    </p>
+    </section>
+  
+  </footer>
+  
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+
+</html>

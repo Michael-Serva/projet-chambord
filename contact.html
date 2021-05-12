@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr-FR">
+  <head>
+          <!--fonts-->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Open+Sans:wght@300&family=Pinyon+Script&display=swap" rel="stylesheet">
+          <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bienvenue à l'hotel Chambord, sur cette page vous pouvez nous contacter et trouver le plan d'accès de l'hôtel">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!--jQuery pour le datepicker-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Hotel Chambord - Contact et accès</title>
+  </head>
+  <body>
+
+      
+   <header class="fixed-top row"><!--debut du header-->
+    <!--Logo + titre-->
+    
+    <div id="logo" class="container row align-items-center">
+      <!--Dropdown choix de la  langue-->
+      <div class="dropdown col-lg-1 col-md col-sm-2">
+        <button class="btn dropdown-toggle" type="button" 
+        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="drapeau"><img src="img/logo-fr-2.png" width="20" alt="image du drapeau français"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item drapeauFR" href="#"><img src="img/logo-fr-2.png" width="20" alt="image du drapeau français">  Français</a></li>
+          <li><a class="dropdown-item drapeauEN" href="#"><img src="img/logo-en.jpg" width="20" alt="image du drapeau anglais">  English</a></li>
+        </ul>
+      </div>
+
+        <!--logo de la page-->  
+      <div class="col-lg-1 col-md offset-lg-4 offset-md-2 col-sm col-2" ><a href="index.html"><img src="img/logo.png" width="70" alt="Ceci est le logo" id="tailleLogo"></a></div>
+
+      <!--titre de la page-->
+      <div class="col-lg-1 col-md col-sm col" id="positionTitre"><a href="index.html"><h1 class="text-center">Hotel Chambord *****</h1></a></div>
+
+      <!--panier-->
+       <div class="col-lg-1 offset-lg-3 offset-md-1 col-md col-sm-2 col-1 " id="positionPanier"><a href="panier.html"><img src="img/logo-panier1.jpg" alt="Ceci est votre panier d'achat" width="30" ></a></div>
+
+       <!--bouton de recherche-->
+       <div class="dropdown col-lg-1 col-md col-sm-1 col-1" id="positionLoupe">
+        <button class="btn dropdown-toggle" type="button" 
+        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/logo-loupe.jpg" width="20" alt="image du drapeau français">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          
+            <div class="input-groupb row">
+            <div class="form-outline col-10">
+              <input id="search-input" type="search" class="form-control" />
+            </div>
+            <button id="search-button" type="button" class="btn col-1 col-md-1 bouton-de-recherche"><img src="img/logo-loupe.jpg" width="15" alt="">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        
+        </div>
+      </div>
+      
+    </div>
+    <!--navbar alternative-->
+    <section class=".blocNav">
+    <nav class="navbar navbar-expand-lg navbar-light  hidden responsiveNavbar notreBg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="hotel.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hotel
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="hotel.html">Présentation</a></li>
+                <li><a class="dropdown-item" href="hotel.html#galerie">Galerie</a></li>
+                <li><a class="dropdown-item" href="contact.html">Plan d'accès</a></li>
+                <li><a class="dropdown-item" href="contact.html#contact">Contact</a></li>
+                <li><a class="dropdown-item" href="recrutement.html">Rejoindre notre équipe</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="chambre.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chambres
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="chambre.html#classique">Classique</a></li>
+                <li><a class="dropdown-item" href="chambre.html#confort">Confort</a></li>
+                <li><a class="dropdown-item" href="chambre.html#deluxe">Deluxe</a></li>
+                <li><a class="dropdown-item" href="chambre.html#suite">Suite</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="restaurant.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurant
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="spa.html#decouverte">Soin découverte</a></li>
+                <li><a class="dropdown-item" href="spa.html#detente">Soin détente</a></li>
+                <li><a class="dropdown-item" href="spa.html#relaxant">Soin relaxant</a></li>
+                <li><a class="dropdown-item" href="spa.html#plaisir">Soin plaisir</a></li>
+                <li><a class="dropdown-item" href="spa.html#evasion">Soin Evasion</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="spa.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Spa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="actualites.html">Actualités</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="presse.html">Presse</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+        <!--navabar principale-->
+        <nav class="navbar navbar-expand-lg navbar-light initialNavbar notreBg">
+          <div class="container-fluid ">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+              
+            </button>
+            <div class="collapse navbar-collapse initialNavbar" id="navbarTogglerDemo01">
+
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link hotel active" aria-current="page" href="hotel.html">Hotel</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link chambre" aria-current="page" href="chambre.html">Chambres</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link restaurant" aria-current="page" href="restaurant.html">Restaurant</a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link spa" aria-current="page" href="spa.html">Spa</a>
+                </li>
+                 <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="actualites.html">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="presse.html">Presse</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav><!--fin de navbar-->
+        <ul class="sousMenu row">
+          
+          <li class="col lien1"></li>
+          <li class="col lien2"></li>
+          <li class="col lien3"></li>
+          <li class="col lien4"></li>
+          <li class="col lien5"></li>
+
+
+        </ul>
+      </section>
+ 
+        <div class="position-relative sideBar">
+          <nav class="side-nav position-absolute top-0 end-0">
+              <div class="fondLogo"><a href="index.html"><img src="img/logo.png" width="50" alt="ceci est le logo de l'hôtel"></a></div>
+              <div class="fondReserver text-center" >R<br>é<br>s<br>e<br>r<br>v<br>e<br>r</div><!--creer une image sur photoshop avec le mot reserver-->
+              <div class="fondChambre fondLogo"><a href="reservations.html#resa_chambre"><img src="img/logo-chambre.svg"  alt="logo de la chambre"></a><span class="effetSideBar">CHAMBRES & SUITES</span></div>
+              <div class="fondRestau fondLogo"><a href="reservations.html#resa_restaurant"><img src="img/logo-restaurant.svg" alt="logo du restaurant"></a><span class="effetSideBar">RESTAURANT</span></div>
+              <div class="fondSpa fondLogo"><a href="reservations.html#resa_spa"><img src="img/logo-spa.png" alt="logo de l'espace spa" class="" width="30"></a><span class="effetSideBar">SPA & SOINS</span></div>
+
+          </nav>
+      </div>
+  </header> <!--Fin du header-->
+
+
+ <main>
+
+  <div class="container">
+    <h1 class="text-left">Plan d'accès</h1>
+    <section class="container row">
+      <div class="col-lg-8">
+          <iframe class="plan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612.036361199904!2d2.2998705694257877!3d48.86507921141246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sen!2sfr!4v1619707195314!5m2!1sen!2sfr" style="border:1px solid var(--taupeClair);"  allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-lg">
+        <div class="piedHotel">
+          <img src="img/logo.png" width="70" alt="logo" >
+          <br>Hotel Chambord *****
+          <br>1 avenue Montaigne
+          <br>75008 Paris
+        </div>
+        <div class="navbar-light text-center align-items-end" >
+          <br>
+          <p>Téléphone : +33 1 45 78 12 96
+          <br>email : contact@hotelchambord.fr</p>
+        </div>
+      </div>
+    </section>
+    <div id="contact">
+      <h1 class="text-left">Nous contacter</h1>
+      <section class="encadrement">
+        <div class="container row">
+          <div class="col-sm-5 cover">
+            <img src="img/hotel-vue.jpg" alt="">
+          </div>
+          <div class="col-sm">
+            <form id="form-contact">
+              <div class="row">
+                <div class="col-sm-6 decalRight">
+                  <input type="text" required class="form-control" id="inputPrenomContact" placeholder="Prénom">
+                </div>
+                <div class="col-sm-6 decalLeft">
+                <input type="text" required class="form-control" id="inputNomContact" placeholder="Nom">
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 decalRight">
+                  <input type="text" class="form-control" id="inputEntContact" placeholder="Entreprise">
+                </div>
+                <div class=" col-sm-6 decalLeft">
+                  <input type="text" class="form-control" id="inputPaysContact" placeholder="Pays">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <input type="email" required class="form-control" id="inputEmailContact" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                <input type="text" required class="form-control" id="inputSujetContact" placeholder="Objet de votre message">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <select id="inputCategorie" required class="form-control">
+                    <option value="" selected> > Sélectionner le service destinataire</option>
+                    <option value="chambre">Chambre</option>
+                    <option value="restau">Restaurant</option>
+                    <option value="spa">Spa</option>
+                    <option value="general">Ordre général</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <textarea class="form-control" required id="messageContact" rows="6" placeholder="Rédigez votre message"></textarea>
+                </div>
+              </div>
+              <div class="aDroite">
+                <input class="btn buttonBg" id="contactValid" value="Envoyer">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+ </main>
+
+ <footer >
+  <section class="footer1 row ">
+    <div class="piedHotel col-sm-2">
+      <img src="img/logo.png" width="70" alt="logo" >
+      <br>Hotel&nbsp;Chambord&nbsp;*****
+      <br>1 avenue Montaigne
+      <br>75008 Paris
+
+    </div>
+    <nav class="navFoot navbar-light col-sm-2 ">
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="contact.html">Accès</a></li>
+        <li><a class="nav-link" href="contact.html#contact">Contact</a></li>
+        <li><a class="nav-link" href="recrutement.html">Recrutement</a></li>
+        <li><a class="nav-link" href="presse.html">Presse</a></li>
+        <li><a class="nav-link" href="hotel.html#galerie">Galerie</a></li>
+      </ul>
+    </nav>
+    <div class="reseau col-lg-3">
+      <p>
+      <a href="http://www.facebook.com"><img src="img/logo-facebook.png"  alt="logo facebook" ></a>
+      <a href="http://www.twitter.com"><img src="img/logo-twitter.png"  alt="logo twitter" ></a>
+    </p>
+      
+      <form method="post">        
+        <div class="form-group">
+          <label class="inputEmailLabel">Abonnement à notre newsletter :</label>
+        </div>
+        <div class="form-group">
+          <input type="email" class="emailNews" id="inputEmail" placeholder="Entrer votre email">
+        </div>
+        <input class="btn buttonBg" id="inputEmailValid" value="S'inscrire">
+      </form>
+      <p class="petit">
+        En cliquant sur "s'inscrire", vous acceptez de recevoir des informations sur les nouvelles, les événements, les promotions et les services de l'hotel Chambord*****
+      </p>
+    </div>
+   <div class="avis col-lg-3 row">
+    <div class="col-sm-8">
+      <h3>Un havre de paix dans le luxe d'un palace</h3>
+    </div>
+    <div class="col-sm-4">
+        <div class="etoiles">
+            <div class="etoileOrPied"><!--
+            -->☆<!--
+            -->☆<!--
+            -->☆<!--
+            -->☆<!--
+            -->☆
+            </div>
+        </div>
+    </div>
+    <div >
+      <p class="Sejour">
+        L’accueil l’emplacement l’histoire de cet hôtel le professionnalisme la disponibilité l’écoute du personnel en un mot parfait !
+        <br>Date du séjour : avril 2021
+      </p>
+    </div>
+
+    <div class="col-sm-8">
+      <h3>Extraordinaire malgré le confinement</h3>
+    </div>
+    <div class="col-sm-4">
+        <div class="etoiles">
+            <div class="etoileOrPied"><!--
+            -->☆<!--
+            -->☆<!--
+            -->☆<!--
+            -->☆<!--
+            -->☆
+            </div>
+        </div>
+    </div>
+    <div >
+      <p class="Sejour">
+        Lieu magique, et tout le personnel a été très attentif à nous faire passer un moment extraordinaire malgré les nombreuses contraintes sanitaires. Merci !
+        <br>Date du séjour : mars 2021
+      </p>
+    </div> 
+    <div class="text-end col-lg-10 depotAvis">
+      <span class="infobulleAvis" aria-label="Donnez nous votre avis">
+      <a href="avis.html" ><img src="img/avis.png" width="40" alt="laisser votre avis" >
+      </a></span>
+    </div>
+  </div>
+</section>
+
+<section class="footer2 text-center">
+  <p>© Hotel Chambord **** |<a href="plansite.html"> Plan du site </a>|<a href="mentionslegales.html"> Mentions légales </a>|<a href="cgv.html"> Conditions générales de vente </a>| <span class="infobulleImprimer" id="button-imprimer" aria-label="Imprimer"><img src="img/logo-print.png" width="30" alt="logo imprimer" ></span>
+
+    <br></p>
+    <p class="notreBg">
+    Ce site, tout en étant totalement fonctionnel, est fictif : il s'agit d'un projet d'études pour l'IFOCOP.
+  </p>
+  </section>
+
+</footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scriptContact.js"></script>
+    <script src="js/navbar.js"></script>
+
+
+
+  </body>
+</html>

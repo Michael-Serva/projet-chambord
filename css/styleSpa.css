@@ -1,0 +1,37 @@
+:root{
+    --or: #d3c37b;
+    --taupeClair: #aba598;
+    --taupe: #89725B;
+    --marronGlace: #4c3e2c;
+    --chocolat: #0f0d0a;
+    --police : #ce9c4c;
+    --box-shadow-light :0px 2px 5px 0px rgba(150,150,150,.8); 
+    --box-shadow-hight :0px 10px 20px 0px rgba(150,150,150,.8); 
+}
+#carouselExampleControlsNoTouching img{
+    max-height: 500px;
+}
+@media (max-width: 576px) {
+    #blocTxt{
+        padding: 20px;
+        left: 0%;
+        width: 98%;
+        font-size: small;
+        max-height: 160px;
+        overflow: auto;
+    }
+}
+@media (max-width: 1050px) {
+    #blocTxt{
+        padding: 10px;
+        left: 0%;
+        width: 98%;
+        font-size: small;
+        max-height: 160px;
+        overflow: auto;
+    }
+}
+
+#blocTxt{
+    padding: 30px 20px 0 0;
+}

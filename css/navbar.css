@@ -1,0 +1,24 @@
+.sousMenu{
+    width: 100%;
+    height: 3em;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    font-size: 0.9em;
+    
+}
+a{
+    color: rgb(46, 3, 3);
+}
+.sousMenu li{
+    list-style-type: none;
+    text-align: center;
+}
+
+a.nav-link:hover{
+    color: var(--marronGlace);
+    transform: scale(1.2);
+    /* font-weight: bold; */
+    transition: 1s;
+}

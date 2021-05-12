@@ -1,0 +1,725 @@
+:root {
+    --or: #d3c37b;
+    --taupeClair: #aba598;
+    --taupe: #89725B;
+    --marronGlace: #4c3e2c;
+    --chocolat: #0f0d0a;
+    --police: #ce9c4c;
+    --box-shadow-light: 0px 2px 5px 0px rgba(150,150,150,.8); 
+    --box-shadow-hight: 0px 10px 20px 0px rgba(150,150,150,.8); 
+}
+
+body {
+    margin-top: 138px;
+}
+header {
+    background-color: white;
+}
+/* #logo {
+    display: flex;
+    justify-content: center;
+    
+}
+*/
+#logo a {
+    text-decoration: none;
+}
+.bouton-de-recherche {
+    padding: 0;
+}
+
+ul.dropdown-menu.show {
+    border: none;
+    padding: 0;
+}
+h1 {
+    top: 0;
+    color: var(--police);
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pinyon Script', cursive;
+    white-space: nowrap;
+}
+
+h1.okwrap{
+    white-space: normal;
+}
+
+/*****************navbar*******************/
+.notreBg {
+    background-color: var(--or);
+    opacity: 0.5;
+    padding: 20px;
+}
+.initialNavbar{
+    justify-content: center;
+    position: relative;
+}
+.navbar-collapse {
+    position: relative;
+}
+.navbar-collapse form {
+    position: absolute;
+    right: 0;
+}
+/******************Side nav*****************/
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--taupeClair);
+    width:50px;
+    height:300px;
+    margin-right: 11px;  
+}
+.couleur-button {
+    background-color: black;
+}
+.fondLogo {
+    flex:1;
+    background-color: var(--or);
+}
+.fondReserver {
+    padding: 5px 0 10px;
+    flex:2;
+    background-color: var(--or);
+    line-height: 11px;
+    font-weight: bold;
+}
+
+.fondChambre {
+    flex:1;
+    background-color: var(--taupe);
+    position: relative;   
+}
+.fondSpa {
+    flex:1;
+    background-color: var(--taupeClair);
+    position: relative; 
+}
+.fondSpa img {
+    margin: 9px;
+}
+.fondRestau {
+    flex:1;
+    background-color: var(--marronGlace);
+    position: relative; 
+}
+
+span.effetSideBar{
+    position: absolute;
+    right: -120px;
+    top: 20%;
+    z-index: -1;
+    white-space: nowrap;
+    display: flex;
+    font-weight:bold;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+/*******effets sur la side nav*********/
+.fondChambre:hover span.effetSideBar {
+    right: 70px;
+    transition: 1s;
+    background-color:rgba(255, 255 , 255, 0.4);
+    display: block;
+}
+.fondSpa:hover span.effetSideBar {
+    right: 70px;
+    transition: 1s;
+    background-color:rgba(255, 255 , 255, 0.4);
+    display: block;
+}
+.fondRestau:hover span.effetSideBar {
+    right: 70px;
+    transition: 1s;
+    background-color:rgba(255, 255 , 255, 0.4);
+    display: block;
+}
+
+
+/***** Cadres photos pour les différentes rubriques ******/
+.cadre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px; 
+    background-color: white;
+    border: 1px solid var(--taupe);
+    box-shadow: var(--box-shadow-light);    
+    transition: all 1s;
+}
+.cadre:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-hight);
+}
+
+.zoneHotel {
+    height: 500px;
+    padding: 60px;
+    transition: all 1s;
+}
+
+#blocTxt {
+    left: 20%;
+    width: 60%;
+    top:170px;
+    font-size: large;
+    text-align: justify;
+    background-color: rgba(50, 60, 70, 0.3);
+    color:white;
+    padding: 20px;
+    transition: all 1s;
+}
+
+.blocTxt:hover {
+    transform: scale(1.05);
+}
+.hidden {
+    display: none;
+}
+.show{
+    display: flex;
+}
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    margin:30px;
+}
+
+.piedHotel {
+    flex-shrink: 1;
+    text-align: center;
+    justify-content: center;
+    color: var(--police);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pinyon Script', cursive;
+    margin: auto;
+}
+
+.navFoot  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+    flex-grow: 1;
+    max-width: 150px;
+    margin: auto;
+}
+.reseau  {
+    padding:20px;
+    margin:auto;
+    text-align: center;
+}
+.reseau p {
+    margin-top: 1rem;
+}
+.petit{
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+.avis {
+    padding:20px;
+    flex-grow: 3;
+    min-width: 450px;
+    text-align: justify;
+}
+.infobulleAvis {
+    color: var(--police);
+    font-weight: bold;
+    font-size: 1rem ;
+    position: relative; 
+  }
+  /* on génère un élément :after lors du survol et du focus :*/
+.infobulleAvis:hover::after,
+.infobulleAvis:focus::after {
+content: attr(aria-label);  /* on affiche aria-label */
+position: absolute;
+top: 0;
+left: -10px;
+transform: translateX(-100%); /* on centre horizontalement  */
+z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+.infobulleImprimer {
+    color: var(--police);
+    font-weight: bold;
+    font-size: 1rem ;
+    position: relative; 
+  }
+  .infobulleImprimer:hover {
+    cursor: pointer;
+  }
+  /* on génère un élément :after lors du survol et du focus :*/
+.infobulleImprimer:hover::after,
+.infobulleImprimer:focus::after {
+content: attr(aria-label);  /* on affiche aria-label */
+position: absolute;
+top: 0;
+transform: translateX(20%); /* on centre horizontalement  */
+z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+.infobulle {
+    position: relative; 
+  }
+  /* on génère un élément :after lors du survol et du focus :*/
+.infobulle:hover::after,
+.infobulle:focus::after {
+content: attr(aria-label);  /* on affiche aria-label */
+position: absolute;
+top: -1.3em;
+transform: translateX(-100%); /* on centre horizontalement  */
+z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+
+.footer2 {
+    margin:auto;
+    padding:40px;
+    width:80%;
+    text-align:center;
+    border-top: 1px solid var(--taupeClair); 
+}
+.footer2 a {
+    text-decoration: none;
+    color:rgba(0,0,0,.55);
+}
+.footer2 a:hover {
+    text-decoration: none;
+    color: #212529;;
+}
+
+.buttonBg {
+    background-color: var(--police);
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.inputEmail {
+    padding-top: 10px;
+}
+.inputEmailLabel {
+    padding: 10px 0 5px;
+    color: grey;
+    font-size: small;
+}
+
+h1.text-left {
+    padding-left: 30px;
+}
+.form-control  {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--taupeClair);
+    margin: 10px;
+    color: var(--taupeClair);
+    appearance: auto;
+}
+
+.form-control::placeholder {
+    color: var(--taupeClair);
+}
+
+.decalRight {
+    padding-right: 10px;
+}
+.decalLeft {
+    padding-left: 10px;
+}
+.decalHaut{
+    padding-top: 10px;
+}
+
+.aDroite {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.encadrement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px; 
+    background-color: white;
+    border: 1px solid var(--taupe);
+    box-shadow: var(--box-shadow-hight);    
+}
+.cover {
+    overflow: hidden;
+}
+
+.etoiles{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 20px;
+}
+.textEtoiles{
+    padding-right: 10%;
+    text-align: justify;
+}
+
+/*---css Chambre---*/
+
+.txtChambre {
+    margin:auto;
+    width: 80%;
+    text-align: justify;
+    padding: 0 5px 5px 0;
+}
+h2 {
+    color:var(--police);
+    font-size: x-large;
+    font-weight: bold;
+}
+h3 {
+    color:var(--police);
+    font-size: large;
+    font-weight: normal;
+}
+.textPave h3 {
+    margin-top: 10px;
+}
+.textPave{
+    padding: 0 10%;
+    text-align: justify;
+}
+
+.detailChambre {
+    text-align: justify;
+}
+.detailsContent{
+    padding-left: 5px;
+    padding-right: 50px;
+}
+.imgHauteur {
+   float:left;
+   overflow: hidden;
+}
+.btn-upload {
+    background-color: white;
+    border: 2px solid var(--police);
+    color: var(--police);
+    padding: 10px;
+    margin:10px;
+    border-radius: 5px; 
+    white-space: nowrap;
+}
+#btnRecrut{
+    margin:10px;
+    width: 9rem;
+}
+.texteIntro{
+    text-align: justify;
+}
+
+
+  .parent-div  {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .parent-div input[type=file]  {
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    font-size: 90px;
+  }
+
+  input[type="file"]{
+    cursor: pointer;
+   }
+
+  .couleurChoose {
+      color:var(--taupeClair);
+  }
+  .form-news  {
+    border: 1px solid var(--taupeClair);
+    border-radius: 2px;
+    width: 250px;
+    margin: 10px;
+    color: var(--taupeClair);
+}
+.emailNews {
+    width: 200px;
+}
+
+
+/*css contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    width: 60%;
+}
+
+.plan{
+    width:100%;
+    height: 450px;
+}
+/*---css Hotel---*/
+
+.detailHotel {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.displayImages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+ 
+.miniatures{
+    min-width: 33%;
+    max-width: 20rem;
+}
+
+.card-img{
+    width: 100%;
+    display: contents;
+}
+
+/*--- css resa ---*/
+
+.zoneResa{
+    width: 80%;
+}
+
+
+.datesResa  {
+    border: 1px solid var(--taupeClair);
+    margin: 10px;
+    text-align: center;
+    color: var(--taupeClair);
+}
+
+.datesResaLabel  {
+    color: var(--taupeClair);
+}
+.radioResa, .radioResaSpa{
+    margin: 10px;
+    color: var(--taupeClair);
+}
+
+
+#contact:target, #resa_chambre:target,
+#resa_restaurant:target, #resa_spa:target, 
+#galerie:target, #classique:target,
+#confort:target, #deluxe:target,
+#suite:target, #carte:target,
+#signature:target, #carteVins:target,
+#decouverte:target, #detente:target,
+#relaxant:target, #plaisir:target,
+#evasion:target{
+    padding-top: 140px;
+    margin-top: -140px;
+}
+
+.animation:hover .txtSurImage{
+    animation-duration: 2s;
+    animation-name: slidein;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    overflow: hidden;
+    padding: 10%;
+}
+.couleurCh{
+    background-color: rgba(137, 114, 91, 0.6);
+}
+.couleurRe{
+    background-color: rgba(112, 137, 91, 0.6);
+}
+.couleurSp{
+    background-color: rgba(91, 137, 125, 0.6);
+}
+
+/* etoiles */
+.rating a {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+ }
+ 
+ .etoileOr{
+    color: orange;
+    float: right;
+    text-decoration: none;
+    font-size: 3em;
+ }
+ .etoileGrise{
+    float: right;a;
+    text-decoration: none;
+    font-size: 3em;
+    color: #aaa;
+ }
+ .etoileOrPied{
+    color: orange;
+    float: right;
+    text-decoration: none;
+    font-size: 01em;
+ }
+ .separe {
+    border-bottom: 1px #aaa solid;
+ }
+ .Sejour{
+     font-size: small;
+     padding-right:18%;
+ }
+
+.couleur{
+    text-decoration: none;
+    color: var(--police);
+    font-size:large;
+    list-style-type:square;
+}
+.nocouleur{
+    text-decoration: none;
+    color: var(--chocolat);
+    font-size:medium;
+}
+
+@keyframes slidein {
+    from {
+      right: -100%;
+      width: 60%;
+    }
+  
+    to {
+      right: 0;
+      width: 60%;
+    }
+  }
+  
+
+@media (max-width: 576px) {
+    body {
+        margin-top: 180px;
+    }
+    #blocTxt {
+        left: 0%;
+        top: 200px;
+        width: 90%;
+        font-size: small;
+    }
+    #textIntro {
+        width: 98%;
+        font-size: small;
+    }
+    h1 {
+        white-space: normal;
+    }
+    .cadre {
+        margin: 0;
+        padding: 10px;
+    } 
+    .encadrement {
+        margin: 0;
+        padding: 10px;
+    } 
+    .aDroite {
+        display:block;
+        text-align: center;
+    }
+    .decalLeft {
+        padding-left: 2px;
+    }
+    .reseau, .avis {
+        min-width : 200px;
+        padding: 0;
+    }
+    .etoiles{
+        margin-left: 0;
+    }
+    .datesResa  {
+        width:80%;
+    }
+    #resaChambreValid, #resaRestauValid, #resaSpaValid {
+        width:80%;
+    }
+    #tailleLogo{
+        width: 50px;        
+    }
+    #positionLoupe{
+        padding: 0;
+    }
+    #contact:target, #resa_chambre:target,
+    #resa_restaurant:target, #resa_spa:target, 
+    #galerie:target, #classique:target,
+    #confort:target, #deluxe:target,
+    #suite:target, #carte:target,
+    #signature:target, #carteVins:target,
+    #decouverte:target, #detente:target,
+    #relaxant:target, #plaisir:target,
+    #evasion:target{
+        padding-top: 180px;
+        margin-top: -180px;
+    }
+}
+
+@media (max-width: 800px) {
+    .animation:hover .txtSurImage{
+        height: 90%;
+        position: absolute;
+        top: 5%;
+        font-size: 0.7rem;
+        padding: 4%;
+        padding-right: 50px; 
+    }
+    #positionPanier{
+        text-align: end;
+    }
+    .encadrement {
+        margin: 0;
+        padding: 20px;
+    } 
+    .cadre {
+        margin: 0;
+        padding: 20px;
+    } 
+ 
+}
+
+
+@media (max-width: 1100px) {
+    .navFoot  {
+        max-width: 50%;
+    }
+    .avis{
+        border-top: 1px #aaa solid;
+    }
+}
